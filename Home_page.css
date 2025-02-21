@@ -1,0 +1,5 @@
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5); /* Dark transparent background */
+    padding: 20px;
+    border-radius: 10px;
+}

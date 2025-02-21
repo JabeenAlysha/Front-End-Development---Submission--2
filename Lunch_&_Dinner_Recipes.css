@@ -1,0 +1,74 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif; /* Sets the font */
+    background-color: #f4f4f4; /* Light gray background */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+}
+
+/* Container that holds all recipe boxes */
+.recipe-container {
+    display: flex; /* Enables flexible box layout */
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    justify-content: space-around; /* Distributes items evenly */
+    padding: 20px; /* Adds space around the container */
+}
+
+/* Styling for each individual recipe box */
+.recipe-box {
+    background-color: #fff; /* White background */
+    width: 250px; /* Fixed width for each box */
+    margin: 10px; /* Adds space around each box */
+    padding: 15px; /* Adds space inside the box */
+    border-radius: 8px; /* Rounds the corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth effect on hover */
+    text-align: center; /* Centers text inside the box */
+}
+
+/* Hover effect for recipe boxes */
+.recipe-box:hover {
+    transform: scale(1.05); /* Slightly enlarges the box */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Increases shadow */
+}
+
+/* Recipe image styling */
+.recipe-img {
+    width: 100%; /* Makes the image fit the width of the box */
+    height: 150px; /* Sets a fixed height */
+    object-fit: cover; /* Ensures the image fills the space without distortion */
+    border-radius: 8px; /* Rounds image corners */
+}
+
+/* Recipe link styling */
+.recipe-link {
+    text-decoration: none; /* Removes underline */
+    color: #333; /* Dark gray text */
+    display: block; /* Ensures the link takes full width */
+}
+
+/* Recipe title */
+.recipe-box h3 {
+    font-size: 1.5em; /* Increases font size */
+    margin-bottom: 10px; /* Adds space below the title */
+}
+
+/* Recipe description */
+.recipe-box p {
+    font-size: 1em; /* Standard font size */
+    color: #555; /* Medium gray text */
+}
+
+/* Hover effect duplicated (not needed, already defined above) */
+.recipe-box:hover {
+    transform: scale(1.05); /* Enlarges on hover */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Adds shadow */
+}
+
+/* Restaurant name styling */
+.restaurant-name {
+    font-size: 0.9em; /* Slightly smaller font size */
+    color: #666; /* Light gray text */
+    margin-top: 10px; /* Adds space above */
+    font-style: italic; /* Italicizes text */
+}
